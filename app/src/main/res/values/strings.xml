@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Food Orders</string>
+
+    <!-- food_item.xml-->
+    <string name="food_name">Food name</string>
+    <string name="food_amount">Food amount</string>
+
+    <!--adding_new_food_item.xml -->
+    <string name="adding_food_page_headline">Add new food</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

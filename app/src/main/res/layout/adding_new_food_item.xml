@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="@string/adding_food_page_headline"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/food_name_ET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/food_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/food_amount_ET"
+        app:layout_constraintStart_toStartOf="@id/headline"
+        app:layout_constraintTop_toBottomOf="@id/headline" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/food_amount_ET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/food_amount"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/food_name_ET"
+        app:layout_constraintTop_toTopOf="@id/food_name_ET" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ok_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/ok"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/food_amount_ET"
+        app:layout_constraintTop_toBottomOf="@id/food_amount_ET"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cancel_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/ok_TV"
+        app:layout_constraintEnd_toStartOf="@id/ok_TV"
+        android:layout_marginEnd="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
